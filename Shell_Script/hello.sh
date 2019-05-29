@@ -1,39 +1,43 @@
 #!/bin/bash
+#Script
 
-# Meu comentário
-
-echo "Data e hora do sistema:"
+echo "Data de hoje"
 date
+echo ""
 
-echo "" #Somente para pular a linha
+echo "Frase"
+shuf -n 1 arq.txt
+echo ""
 
-echo "Frase aleátoria:"
-shuf -n 1 arq.txt #escolhe uma quantidade n de linhas para serem lidas de um arquivo
 
-echo "" #Somente para pular a linha
-
-echo "Espaço disponível e usado no HD:"
-df -h -l /
-
-echo "" #Somente para pular a linha
-
-echo "Memória RAM:"
+echo "Memoria RAM"
 free -h --giga
+echo ""
 
-echo "" #Somente para pular a linha
 
-echo "Arquivos no diretório Downloads"
-cd Downloads/
+echo "Memoria disponivel HD Ubuntu"
+df -h -l /
+echo ""
+
+echo "Arquivos da pasta Downloads"
+cd
+cd Downloads
 ls
+echo ""
 
+echo "Quantidade de musicas do usuário"
+cd
+cd Música
+ls -la|grep -e "^-"|wc -l
+echo ""
 
+echo "Quantidade de vídeos do usuário"
+cd
+cd Vídeos
+ls -la|grep -e "^-"|wc -l
+echo ""
 
-
-
-#QUANTIDADE DE MUSICAS OU ARQUIVOS??
-#DE VIDEOS ?
-#DE IMAGENS" ?
-
-
-save_ls=`ls -alh`
-
+echo "Quantidade de imagens do usuário"
+cd
+cd Imagens
+ls -la|grep -e "^-"|wc -l

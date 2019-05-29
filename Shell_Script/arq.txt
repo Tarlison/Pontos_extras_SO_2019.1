@@ -19,4 +19,4 @@
 "Como assim os professores são humanos?"
 " POO eh legal :) "
 "Se está dando certo, revisa tudo de novo porque está errado"
-"O que te garante que está certo? porque eu foi eu que fiz"
+"O que te garante que está certo? porque foi eu que fiz"
